@@ -3,6 +3,9 @@ let musicStatus=false;
 var audio = new Audio('/audio/nursima.mp3');
 audio.autoplay=true;
 showDivs(changeChannel);
+audio.addEventListener("load", function() {
+  audio.play();
+}, true);
 
 function plusDivs(n) {
   showDivs(changeChannel += n);
