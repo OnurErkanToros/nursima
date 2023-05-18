@@ -1,7 +1,7 @@
 let changeChannel = 1;
 let musicStatus=false;
 var audio = new Audio('/audio/nursima.mp3');
-audio.autoplay();
+audio.autoplay=true;
 showDivs(changeChannel);
 
 function plusDivs(n) {
