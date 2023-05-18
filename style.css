@@ -1,0 +1,226 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #9cb782;
+  }
+  
+  .tv-container, .tv {
+    position: relative;
+  }
+  
+  .channels {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top:5px;
+    left:15px;
+    border-radius: 20px;
+    border: 5px solid #333;
+  }
+  
+  .one {
+    background-image: url("images/n1.jpg");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @keyframes bp {
+    100% {background-image: repeating-radial-gradient(circle at 5% 85%, #fff, #333 0.0009px);}
+  }
+  
+  .two {
+    background-image: url("images/n2.jpg");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .two:before, .two:after {
+    content:"";
+    position: absolute;
+  }
+  
+  
+  .three {
+    background-image: url("images/n3.jpg");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  
+  .four {
+    background-image: url("images/mutlu_yillar.png");
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  
+  .controls {
+    width: 200px;
+    height: 300px;
+    background-color: #333;
+    position: absolute;
+    border-radius: 20px;
+    top: 110px;
+    left:35px;
+  }
+  
+  .controls:before {
+    content:"";
+    position: absolute;
+    border: 25px solid #adb6c4;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    left:35px;
+    top:100px;
+  }
+  
+  .controls-one {
+    position: absolute;
+    top:148px;
+    left:38px;
+    word-spacing: 81px;
+  }
+  
+  .move {
+    position: relative;
+    top:50px;
+    left: 50px;
+  }
+  
+  .clickButton {
+    cursor: pointer;
+  }
+  
+  input#power {
+    display: none;
+  }
+  
+  .power {
+    border-radius: 50%;
+    background-color: red;
+    width:30px;
+    height: 30px;
+    box-shadow: inset 1px 1px white;
+    position: absolute;
+    z-index:1;
+    top:122px;
+    left:120px;
+    cursor: pointer;
+  }
+  
+  .power:active {
+    box-shadow: none;
+  }
+  
+  .power:before, .power:after {
+    content:"";
+    position: absolute;
+  }
+  
+  .power:before {
+    border-radius: 50%;
+    border: 2px solid #333;
+    width:17px;
+    height: 17px;
+    left:5px;
+    top:5px;
+  }
+  
+  .power:after {
+    width: 200px;
+    height: 150px;
+    top:-212px;
+    left:-100px;
+    border-radius: 20px;
+    border: 5px solid #333;
+  }
+  
+  #power:checked + .power:after {
+    background-color: black;
+  }
+  
+  .tv {
+    width: 270px;
+    background-color: #bb5437;
+    height: 170px;
+    top:-100px;
+    border: 5px solid #d8cdb5;
+    border-radius:10px;
+  }
+  
+  .tv:before, .tv:after {
+    content:"";
+    position: absolute;
+  }
+  
+  .tv:before {
+    background-color: #f0b254;
+    width:30px;
+    height: 140px;
+    border-radius:5px;
+    left:231px;
+    top:15px;
+  }
+  
+  .tv:after {
+    width:25px;
+    height: 2px;
+    background-color: #333;
+    left: 233.5px;
+    top:20px;
+    box-shadow: 0 5px #333, 0 10px #333,0 15px #333, 0 20px #333, 0 25px #333, 0 30px #333, 0 35px #333, 0 40px #333, 0 45px #333, 0 50px #333, 0 55px #333, 0 60px #333, 0 65px #333, 0 70px #333;
+  }
+  
+  .aerial:after {
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    border-radius: 100px 100px 0 0;
+    background-color: #a46b63;
+    transform: rotate(-45deg);
+    top:90px;
+    left:75px;
+  }
+  
+  .aerial {
+    top:-230px;
+    left:80px;
+    position: absolute;
+    width:100px;
+    height: 100px;
+    border-right:3px solid #707373;
+    border-bottom: 3px solid #707373;
+    transform: rotate(45deg);
+  }
+  
+  .shadow {
+    position: absolute;
+    width: 300px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+    top:130px;
+  }
+  
+  .shadow:before {
+    content:"";
+    position: absolute;
+    background-color: #4e351d;
+    width:15px;
+    height: 100px;
+    top:-85px;
+    left:30px;
+    box-shadow: 210px 0 #4e351d, 180px 0 #24180e, 30px 0 #24180e;
+  }
+  audio{
+    display: hidden;
+  }

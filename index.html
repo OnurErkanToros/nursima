@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NURSIMA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="tv-container">
+        <input id="power" onclick="playMusic()" type="checkbox">
+        <label class="power" for="power"></label>
+        <div class="aerial"></div>
+        <div class="shadow"></div>
+      <div class="tv">
+        <div class="channels one"></div>
+        <div class="channels two"></div>
+        <div class="channels three"></div>
+        <div class="channels four"></div>
+      </div>
+      
+      <div class="controls">
+        <div class="controls-one">
+          <button class="clickButton w3-light-grey" onclick="plusDivs(-1)">❮ </button>
+          <button class="clickButton w3-light-grey" onclick="plusDivs(1)"> ❯</button>
+        </div>
+        <button class="clickButton move" onclick="currentDiv(1)">1</button> 
+        <button class="clickButton move" onclick="currentDiv(2)">2</button> 
+        <button class="clickButton move" onclick="currentDiv(3)">3</button> 
+        <button class="clickButton move" onclick="currentDiv(4)">4</button>
+      </div>
+      </div>
+
+      <audio id="music" src="audio/nursima.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
